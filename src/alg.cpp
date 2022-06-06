@@ -10,7 +10,7 @@ std::vector<char> getPerm(const Tree& tree, int n) {
   std::string start = tree[n-1];
   std::vector<char> resultat;
   int count = 0;
-  while (count < start.lenght()) {
+  while (count < start.length()) {
     resultat.push_back(start[count]);
     count++;
   }
