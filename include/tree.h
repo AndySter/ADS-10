@@ -12,7 +12,7 @@ class Tree {
         std::vector<Node*> nextNode;
     };
     Node* root;
-  
+
     void rootBuild(Node* root, std::vector<char> path) {
         if (!path.size()) {
           return;
