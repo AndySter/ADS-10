@@ -1,4 +1,5 @@
 // Copyright 2022 NNTU-CS
+//Made by AndySter
 #ifndef INCLUDE_TREE_H_
 #define INCLUDE_TREE_H_
 #include <vector>
@@ -17,7 +18,7 @@ class Tree {
           return;
         }
         if (root -> value != '*') {
-            for (auto syn == path.begin(); syn != path.end(); syn++) {
+            for (auto syn = path.begin(); syn != path.end(); syn++) {
                 if (*syn == root -> value) {
                     path.erase(syn);
                     break;
@@ -42,9 +43,9 @@ class Tree {
         if (root -> value != '*')
             symb += root -> value;
         for (size_t i = 0; i < root -> nextNode.size(); i++)
-            cahnge(root -> nextNode[i], symb);
+            change(root -> nextNode[i], symb);
     }
- 
+
  public:
     std::string operator[](int i) const {
         if ( i>= changeNode.size())
